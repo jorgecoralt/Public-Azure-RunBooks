@@ -7,7 +7,7 @@ Import-Module SqlServer
 
 # Parámetros generales
 $ServerName = "MI_URL_DE_AZURE"
-$Credential = Get-AutomationPSCredential -Name "AzureSQL_Cred"
+$Credential = Get-AutomationPSCredential -Name "MI_CREDENCIAL_AUTOMATION"
 
 # Base de datos de referencia
 $OrigenDatabase = "MI_BASE_ORIGINAL"
