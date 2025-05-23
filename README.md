@@ -14,7 +14,7 @@ Deja trazabilidad en una tabla de logs para auditoría y control.
 
 👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/sincronizacion-estructural-de-campos-automatica-en-bases-distribuidas/)
 
-
+---
 
 ### `Sync_databases_tables.ps1`
 
@@ -23,7 +23,7 @@ Compara cada tabla con una base de referencia, detecta cuando una tabla falte en
 
 👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/sincronizacion-estructural-de-tablas-automatica-en-bases-distribuidas/)
 
-
+---
 
 ### `Optimize_indexes_sql_server.ps1`
 
