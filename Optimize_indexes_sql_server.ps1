@@ -10,6 +10,9 @@ $Credential = Get-AutomationPSCredential -Name "MI_CREDENCIAL_AUTOMATION"
 # Crear un array con los nombres de las bases de datos
 $DatabasesDestino = @("BASE1","BASE2",...,"BASEN")
 
+# Crear un array con los nombres de las bases de datos
+$excludedTable ="TABLA_EXCLUIDA"
+
 # Umbrales de fragmentación - desde que valor se ejecuta
 $UmbralReorganize = 5
 $UmbralRebuild = 30
@@ -25,7 +28,7 @@ foreach ($DatabaseName in $DatabaseNames) {
         $Tables = Invoke-Sqlcmd -ServerInstance $ServerName -Username $Credential.Username -Password $Credential.GetNetworkCredential().Password -Database $DatabaseName -Query $Sql
 
         foreach ($Table in $Tables) {
-            if ($Table.TABLE_NAME -ne 'T00AUDITORIA') {
+            if ($Table.TABLE_NAME -ne $excludedTable) {
                 Write-Output ("----------------------------------------")
                 Write-Output ("Tabla: {0}.{1}" -f $Table.TABLE_SCHEMA, $Table.TABLE_NAME)
                 Write-Output ("----------------------------------------")
