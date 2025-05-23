@@ -23,3 +23,18 @@ Compara cada tabla con una base de referencia, detecta cuando una tabla falte en
 
 👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/sincronizacion-estructural-de-tablas-automatica-en-bases-distribuidas/)
 
+
+
+### `Optimize_indexes_sql_server.ps1`
+
+Evalúa automáticamente la fragmentación de índices en múltiples bases SQL Server.
+
+Aplica `REBUILD` o `REORGANIZE` según el porcentaje de fragmentación:
+- Reorganiza si la fragmentación es mayor al umbral mínimo (`$UmbralReorganize`, por defecto 5%).
+- Reconstruye si supera el umbral crítico (`$UmbralRebuild`, por defecto 30%).
+
+Puedes excluir una tabla específica mediante la variable `$excludedTable`.
+
+Este script es ideal para mantener la salud de índices en ejecuciones nocturnas o programadas desde cuentas de Azure Automation (PowerShell 5.1), evitando degradación de rendimiento con un control sencillo y ajustable.
+
+👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/mantenimiento-automatico-de-indices-en-multiples-bases-de-datos-sql-server/)
