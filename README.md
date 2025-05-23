@@ -6,7 +6,7 @@ Este repositorio recopila *runbooks* diseñados para automatizar tareas crítica
 
 ## ⚙️ Funcionalidades incluidas
 
-### `Sync-Databases.ps1`
+### `Sync-Databases_columns.ps1`
 
 Sincroniza estructuras entre bases de datos que deben mantenerse alineadas.  
 Compara cada tabla con una base de referencia, detecta campos faltantes, y los agrega automáticamente con sus propiedades correctas (tipo, nullabilidad, valor por defecto).  
