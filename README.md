@@ -15,6 +15,7 @@ Deja trazabilidad en una tabla de logs para auditoría y control.
 👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/sincronizacion-estructural-de-campos-automatica-en-bases-distribuidas/)
 
 
+
 ### `Sync_databases_tables.ps1`
 
 Sincroniza tablas nuevas entre bases de datos que deben mantenerse alineadas.  
@@ -22,7 +23,3 @@ Compara cada tabla con una base de referencia, detecta cuando una tabla falte en
 
 👉 [**Ver explicación completa y caso de uso**](https://jorgecoral.com/sincronizacion-estructural-de-tablas-automatica-en-bases-distribuidas/)
 
-
----
-
-> Este es solo uno de los varios scripts incluidos en este repositorio. Seguiremos sumando herramientas que nos permitan hacer más con menos... y con más orden.
